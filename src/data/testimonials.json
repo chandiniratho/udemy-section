@@ -1,0 +1,33 @@
+{
+    "heading": "See what others are achieving through learning",
+    "contents": [
+      {
+        "description": "Udemy was rated the <b>most popular online course or certification program</b> for learning how to code according to StackOverflow’s 2023 Developer survey.",
+        "contentUrl": "https://www.udemy.com/topic/web-development/",
+        "contentUrlText": "View Web Development courses",
+        "subText": "37,076 responses collected",
+        "image": {
+          "url": "https://cms-images.udemycdn.com/96883mtakkm8/2PBcNgsQa3SvYWklkiN27r/5b8707cc79c8cae5774d5eb3b88b4001/logo_stackoverflow.svg"
+        }
+      },
+      {
+        "description": "Udemy was truly <b>a game-changer and a great guide</b> for me as we brought Dimensional to life.",
+        "contentUrl": "https://www.udemy.com/course/ios-13-app-development-bootcamp/",
+        "contentUrlText": "View this iOS & Swift course",
+        "subText": "Technical Co-Founder, CTO at Dimensional",
+        "image": {
+          "url": "https://cms-images.udemycdn.com/96883mtakkm8/1Djz6c0gZLaCG5SQS3PgUY/54b6fb8c85d8da01da95cbb94fa6335f/Alvin_Lim.jpeg"
+        }
+      },
+      {
+        "description": "Udemy gives you the ability to be persistent. I learned exactly what I needed to know in the real world. It helped me sell myself to <b>get a new role.</b>",
+        "contentUrl": "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/",
+        "contentUrlText": "View this AWS course",
+        "subText": "Head of Capability Development, North America at Publicis Sapient",
+        "image": {
+          "url": "https://cms-images.udemycdn.com/96883mtakkm8/4w9dYD4F64ibQwsaAB01Z4/c4610e9b1ac65589d8b1374ad10714e2/Ian_Stevens.png"
+        }
+      }
+    ]
+  }
+  

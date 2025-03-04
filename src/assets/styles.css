@@ -1,0 +1,143 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Companies Section */
+.companies-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.companies-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.companies-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.companies-logos img {
+    width: 100px;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.2s;
+}
+
+.companies-logos img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.testimonials-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    width: 320px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonial Text */
+.testimonial-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Image & Subtext - Side by Side */
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.testimonial-author img {
+    width: 50px; /* Adjusted size */
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial-subText {
+    font-size: 12px;
+    color: #777;
+    text-align: left;
+}
+
+/* CTA Link */
+.testimonial-card a {
+    display: block;
+    font-size: 14px;
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.testimonial-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 90%;
+    }
+
+    /* Stack image and subtext vertically on small screens */
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .testimonial-subText {
+        text-align: center;
+    }
+}
