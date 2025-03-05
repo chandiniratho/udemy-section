@@ -25,17 +25,16 @@ body {
 
 /* Logo Grid */
 .companies-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+    justify-items: center;
     margin-top: 16px;
 }
 
 .companies-logos img {
     height: 40px;
-    max-width: 120px;
+    max-width: 100%;
     object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.7;
@@ -49,36 +48,29 @@ body {
 }
 
 /* Responsive Logo Adjustments */
-@media (max-width: 1024px) {
-    .companies-logos {
-        gap: 24px;
-    }
-
-    .companies-logos img {
-        height: 35px;
-        max-width: 100px;
-    }
-}
-
 @media (max-width: 768px) {
     .companies-logos {
         gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     }
 
     .companies-logos img {
         height: 30px;
-        max-width: 80px;
     }
 }
 
 @media (max-width: 480px) {
+    .companies-section {
+        padding: 20px 5%;
+    }
+
     .companies-logos {
         gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     }
 
     .companies-logos img {
         height: 25px;
-        max-width: 60px;
     }
 }
 
@@ -102,47 +94,53 @@ body {
 .testimonials-carousel-wrapper {
     position: relative;
     overflow: hidden;
+    padding-bottom: 10px;
 }
 
+/* Horizontal Scroll with Snap */
 .testimonials-carousel {
     display: flex;
+    gap: 15px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
 }
 
 .testimonials-carousel::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in Chrome/Safari */
+    display: none;
 }
 
-/* Testimonial Card */
 .testimonial-card {
     flex: 0 0 auto;
     width: 300px;
     background: #fff;
     padding: 20px;
-    margin-right: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    scroll-snap-align: start;
 }
 
+/* Testimonial Quote */
 .testimonial-quote {
     font-size: 40px;
     color: #6c63ff;
     margin: 0;
 }
 
+/* Testimonial Description */
 .testimonial-description {
     font-size: 14px;
     line-height: 1.6;
     margin: 1px 0 10px;
 }
 
-/* Footer Section (Avatar + Author Info) */
+/* Footer (Avatar + Author Info) */
 .testimonial-footer {
     display: flex;
     align-items: center;
@@ -156,7 +154,7 @@ body {
     border-radius: 50%;
 }
 
-/* Author Info - Remove all spacing between name & title */
+/* Author Info */
 .testimonial-author-info {
     display: flex;
     flex-direction: column;
@@ -177,7 +175,6 @@ body {
     margin: 0;
 }
 
-/* Testimonial Link */
 .testimonial-link {
     margin-top: 10px;
     display: inline-block;
@@ -186,7 +183,7 @@ body {
     text-decoration: none;
 }
 
-/* Carousel Navigation Buttons */
+/* Carousel Navigation Buttons (optional if you want arrows) */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -209,60 +206,35 @@ body {
     right: 0;
 }
 
-/* Mobile Responsive - Full Width Cards */
+/* Mobile Full Width Cards */
 @media (max-width: 768px) {
+    .testimonials-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
     .testimonials-carousel {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
         gap: 10px;
-        padding-bottom: 20px;
     }
 
     .testimonial-card {
         min-width: 90%;
         width: auto;
-        margin-right: 10px;
+        padding: 15px;
         scroll-snap-align: start;
-    }
-
-    .companies-section {
-        padding: 20px 5%;
-    }
-
-    .companies-logos {
-        gap: 16px;
-    }
-
-    .companies-logos img {
-        height: 28px;
-        max-width: 70px;
+        margin-right: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .companies-section {
-        padding: 20px 5%;
-    }
-
-    .companies-logos {
-        gap: 12px;
-    }
-
-    .companies-logos img {
-        height: 24px;
-        max-width: 60px;
-    }
-
     .testimonials-heading {
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
     }
 
     .testimonial-card {
         min-width: 100%;
         padding: 15px;
-        margin-right: 10px;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     }
 
