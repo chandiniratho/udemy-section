@@ -5,7 +5,7 @@ import "../assets/styles.css";
 const Companies = () => {
   return (
     <div className="companies-section">
-      <h2>{companies.heading}</h2>
+      <p className="companies-heading">{companies.heading}</p>
       <div className="companies-logos">
         {companies.contents.map((company, index) => (
           <img key={index} src={company.image.url} alt={company.image.altText} />
