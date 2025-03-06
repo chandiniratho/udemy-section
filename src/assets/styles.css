@@ -191,7 +191,7 @@ body {
     }
 }
 
-/* Responsive Fixes (UDemy-like Responsiveness) */
+/* RESPONSIVE FIXES */
 
 /* Companies Section Responsiveness */
 @media (max-width: 1024px) {
@@ -233,7 +233,7 @@ body {
         padding: 30px 15px;
     }
     .testimonials-heading {
-        font-size: 22px;
+        font-size: 26px;
         text-align: center;
     }
 }
@@ -243,7 +243,7 @@ body {
         padding: 20px 10px;
     }
     .testimonials-heading {
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
     }
     .testimonial-card {
@@ -275,25 +275,5 @@ body {
     }
     .testimonial-author-title {
         font-size: 11px;
-    }
-}
-
-/* Additional Typography Tweaks */
-@media (max-width: 1024px) {
-    .testimonials-heading {
-        font-size: 26px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .testimonials-heading {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 480px) {
-    .testimonials-heading {
-        font-size: 20px;
     }
 }
