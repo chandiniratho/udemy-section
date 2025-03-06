@@ -184,7 +184,7 @@ body {
     right: 10px;
 }
 
-/* Mobile: Hide arrows on small screens */
+/* Hide arrows on mobile */
 @media (max-width: 480px) {
     .carousel-btn {
         display: none !important;
