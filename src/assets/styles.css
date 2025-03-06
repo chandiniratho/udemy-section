@@ -51,10 +51,10 @@ body {
 @media (max-width: 768px) {
     .companies-logos {
         gap: 16px;
-        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     }
     .companies-logos img {
-        height: 30px;
+        height: 35px;
     }
 }
 
@@ -67,7 +67,7 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     }
     .companies-logos img {
-        height: 25px;
+        height: 30px;
     }
 }
 
@@ -210,7 +210,7 @@ body {
     display: block;
 }
 
-/* Mobile Adjustments */
+/* Mobile Responsiveness for Testimonials */
 @media (max-width: 768px) {
     .testimonials-heading {
         font-size: 24px;
@@ -252,20 +252,5 @@ body {
     .carousel-btn {
         font-size: 16px;
         padding: 5px;
-    }
-}
-
-/* Ensure full mobile-friendly layout */
-@media (max-width: 400px) {
-    body {
-        font-size: 14px;
-    }
-    .testimonial-card {
-        padding: 10px;
-        width: 100%;
-    }
-    .carousel-btn {
-        font-size: 14px;
-        padding: 4px;
     }
 }
