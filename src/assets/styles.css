@@ -190,7 +190,7 @@ body {
     }
 }
 
-/* RESPONSIVE FIXES */
+/* Responsive Fixes */
 @media (max-width: 64rem) {
     .companies-logos {
         grid-template-columns: repeat(auto-fit, minmax(4.375rem, 1fr));
